@@ -149,7 +149,7 @@ const MyAddedPets = () => {
   return (
     <div>
       <div className='flex flex-col lg:flex-row justify-between border-b pb-8 m-20 '>
-        <h1 className='font-semibold text-2xl'>My Added Pets</h1>
+        <h1 className='font-semibold text-2xl'>我添加的宠物</h1>
         <h2 className='font-semibold text-2xl'>
           {filteredPets.length} Added Pets
         </h2>

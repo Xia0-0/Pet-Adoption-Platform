@@ -55,7 +55,7 @@ console.log('request pet',pets);
           Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Accept Adoption Request successfully',
+            title: 'Accept 领养申请 successfully',
             showConfirmButton: false,
             timer: 1500,
           });

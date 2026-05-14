@@ -59,7 +59,7 @@ const Navbar = ({ children }) => {
                   }>Home</NavLink></li>
     <li><NavLink to="/petlisting" className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#fff] font-bold rounded-3xl bg-[#D52B5C] px-6 py-2   underline-offset-8 hover:text-red  " : ""
-                  }>Pet Listing</NavLink></li>
+                  }>宠物列表ing</NavLink></li>
                   <li><NavLink to="/donationcampaign" className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#fff] font-bold rounded-3xl bg-[#D52B5C] px-6 py-2   underline-offset-8 hover:text-red  " : ""
                   }>Donation Campaigns</NavLink></li>

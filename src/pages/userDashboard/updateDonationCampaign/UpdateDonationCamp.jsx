@@ -57,7 +57,7 @@ const UpdateDonationCamp = () => {
   const saveImage = async () => {
     try {
       if (!image) {
-        return toast.error("Please upload an image");
+        return toast.error("请先上传图片");
       }
 
       const formData = new FormData();
@@ -152,7 +152,7 @@ const UpdateDonationCamp = () => {
                     Pet Image
                   </label>
                   <div className="input flex justify-end mb-5">
-                    <p>Image file:</p>
+                    <p>图片文件：</p>
                     <label
                       htmlFor="file-upload"
                       className="custom-file-upload ">

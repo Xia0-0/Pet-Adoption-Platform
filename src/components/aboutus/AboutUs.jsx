@@ -24,7 +24,7 @@ const Contact = () => {
     emailjs.sendForm('service_9q2dnan', 'template_4g8zlzm', form.current, 'eFsOrcFwb7oeD_oO1')
       .then((result) => {
           console.log(result.text);
-          toast.success('Send Email Successfully', {
+          toast.success('邮件发送成功', {
             position: toast.POSITION.RIGHT_TOP,
             autoClose: 6000,
       hideProgressBar: false,
@@ -40,7 +40,7 @@ const Contact = () => {
   };
     return (
         <div className='section h-screen mt-20 lg:mb-20 mb-96 ' id='contact'>
-            <div className='flex flex-col'><h1 className='text-4xl font-bold text-center  my-20 gradient-text'>GET IN TOUCH</h1></div>
+            <div className='flex flex-col'><h1 className='text-4xl font-bold text-center  my-20 gradient-text'>联系我们</h1></div>
           <div className='flex flex-col lg:flex-row gap-10 items-center justify-center'>
             <div>
 <img src={contact} className='w-96 header' alt="" data-aos="zoom-in-up" />
@@ -89,10 +89,10 @@ const Contact = () => {
        
       </div>
     </div>
-    <div><textarea name='message' required  className="textarea textarea-bordered w-full" placeholder="Write Your Message"></textarea></div>
+    <div><textarea name='message' required  className="textarea textarea-bordered w-full" placeholder="请输入留言内容"></textarea></div>
   </div>
   <div className="p-6 ">
-   <input type='submit' className='w-full bgg cursor-pointer text-white font-bold bg-[#FF4081]  rounded-full py-3' value='Send'/>
+   <input type='submit' className='w-full bgg cursor-pointer text-white font-bold bg-[#FF4081]  rounded-full py-3' value='发送'/>
     {/* <button
       className="block w-full select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
       type="button">
