@@ -11,13 +11,13 @@ const PetListingCard = ({card}) => {
             <div className="card  h-96 bg-base-100 shadow-xl ">
   <figure><img src={image} className="w-6/12" alt="Shoes" /></figure>
   <div className="card-body">
-    <h2 className="card-title">Pet Name:{name}</h2>
-    <p>Age:{age}</p>
-    <p>Location:{location}</p>
+    <h2 className="card-title">宠物名称：{name}</h2>
+    <p>年龄：{age}</p>
+    <p>地点：{location}</p>
     <p>{category}</p>
-    <p>Added Time:{addedDate}</p>
+    <p>添加时间：{addedDate}</p>
     <div className="card-actions justify-end">
-    <Link to={`../adoptpet/${_id}`}> <button className="btn btn-primary">View Details</button></Link> 
+    <Link to={`../adoptpet/${_id}`}> <button className="btn btn-primary">查看详情</button></Link> 
     </div>
   </div>
 </div>

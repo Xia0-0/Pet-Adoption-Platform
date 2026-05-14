@@ -70,7 +70,7 @@ const AdoptPet = () => {
 
 
 
-    // Close the modal before making the fetch request
+    // 关闭 the modal before making the fetch request
     document.getElementById('my_modal_4').close();
 
     fetch('https://serversite-pet-adoption.vercel.app/addtoadopt', {
@@ -164,7 +164,7 @@ const AdoptPet = () => {
                     id="phone"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="Enter Your Phone Number"
+                    placeholder="请输入手机号"
                     min="0"
                     required
                     className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
@@ -181,7 +181,7 @@ const AdoptPet = () => {
                     id="address"
                     value={userAddress}
                     onChange={(e) => setUserAddress(e.target.value)}
-                    placeholder="Enter Your Address"
+                    placeholder="请输入地址"
                     min="0"
                     required
                     className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
@@ -199,7 +199,7 @@ const AdoptPet = () => {
                       >
                         Submit
                       </button>
-                      <button className="btn bg-blue-400">Close</button>
+                      <button className="btn bg-blue-400">关闭</button>
                     </div>
                   </form>
                 </div>

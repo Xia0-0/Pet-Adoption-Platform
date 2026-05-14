@@ -203,7 +203,7 @@ useEffect(() => {
       </div>
 
       <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={closeModal}>
-        Close
+        关闭
       </button>
     </div>
   </div>
@@ -216,7 +216,7 @@ useEffect(() => {
     <div className="bg-white p-4 rounded z-10">
       <p>No One donated</p>
       <button className="bg-blue-500 text-white px-2 py-1 rounded" onClick={closeModal}>
-        Close
+        关闭
       </button>
     </div>
   </div>

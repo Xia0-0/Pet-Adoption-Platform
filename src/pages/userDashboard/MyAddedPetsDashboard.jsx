@@ -102,19 +102,19 @@ const MyAddedPetsDashboard = () => {
     )}
       <li><NavLink to="/addpet" className={({ isActive, isPending }) =>
         isPending ? "pending  text-white" : isActive ? "text-warning  font-bold underline underline-offset-8 hover:text-red  " : ""
-      }>Add a Pet</NavLink></li>
+      }>添加宠物</NavLink></li>
       <li><NavLink to="/myaddedpets" className={({ isActive, isPending }) =>
         isPending ? "pending  text-white" : isActive ? "text-warning font-bold  underline underline-offset-8 hover:text-red  " : ""
-      }>My Added Pets</NavLink></li>
+      }>我添加的宠物</NavLink></li>
       <li><NavLink to="/adoptionreq" className={({ isActive, isPending }) =>
         isPending ? "pending text-white" : isActive ? "text-warning font-bold  underline underline-offset-8 hover:text-red  " : ""
-      }>Adoption Request</NavLink></li>
+      }>领养申请</NavLink></li>
       <li><NavLink to="/createdonationcamp" className={({ isActive, isPending }) =>
         isPending ? "pending text-white" : isActive ? "text-warning font-bold  underline underline-offset-8 hover:text-red  " : ""
-      }>Create Donation Campaigns</NavLink></li>
+      }>创建捐赠活动</NavLink></li>
       <li><NavLink to="/mydonationcamp" className={({ isActive, isPending }) =>
         isPending ? "pending text-white" : isActive ? "text-warning font-bold  underline underline-offset-8 hover:text-red  " : ""
-      }>My Donation Campaign</NavLink></li>
+      }>我的捐赠活动</NavLink></li>
       <li><NavLink to="/mydonation" className={({ isActive, isPending }) =>
         isPending ? "pending text-white" : isActive ? "text-warning font-bold  underline underline-offset-8 hover:text-red  " : ""
       }>My Donation </NavLink></li>
@@ -145,7 +145,7 @@ const MyAddedPetsDashboard = () => {
           </ul>
         </div>
         <div className=' h-40 bg-warning py-10 '>
-          <p className='border-y-2 w-4/12 mx-auto text-3xl  font-bold text-center '>User Dashboard</p>
+          <p className='border-y-2 w-4/12 mx-auto text-3xl  font-bold text-center '>用户控制台</p>
         </div>
         {/* con */}
 <MyAddedPets></MyAddedPets>

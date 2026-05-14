@@ -88,7 +88,7 @@ const PetListing = () => {
       <div>
         <Navbar></Navbar>
         <div>
-            <p className="text-3xl flex justify-center w-4/12 mx-auto border-y-2 my-20 ">Pet List</p>
+            <p className="text-3xl flex justify-center w-4/12 mx-auto border-y-2 my-20 ">宠物列表</p>
         </div>
         <div className='flex flex-col items-center w-full '>
          <div className="flex items-center justify-between flex-1">
@@ -97,7 +97,7 @@ const PetListing = () => {
           <input
             type="text"
             className='block  rounded border border-solid border-neutral-300 bg-white bg-clip-border px-2 py-2 text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary'
-            placeholder="Search by pet name"
+            placeholder="按宠物名称搜索"
             value={searchQuery}
             onChange={handleSearchInputChange}
           />
@@ -110,7 +110,7 @@ const PetListing = () => {
             onChange={handleCategoryChange}
             className='block ml-2 p-2 rounded border border-solid border-neutral-300 bg-white bg-clip-border text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary'
           >
-            <option value="">All Categories</option>
+            <option value="">全部分类</option>
             <option value="Cat">Cat</option>
             <option value="Dog">Dog</option>
             <option value="Bird">Bird</option>
