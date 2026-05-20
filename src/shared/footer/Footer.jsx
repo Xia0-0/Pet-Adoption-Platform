@@ -5,30 +5,30 @@ const Footer = () => {
         <div>
            <footer className="footer p-10 bg-base-200 text-base-content">
   <nav>
-    <header className="footer-title">Services</header> 
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+    <header className="footer-title">服务</header> 
+    <a className="link link-hover">品牌推广</a>
+    <a className="link link-hover">设计</a>
+    <a className="link link-hover">市场营销</a>
+    <a className="link link-hover">广告</a>
   </nav> 
   <nav>
-    <header className="footer-title">Company</header> 
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <header className="footer-title">公司</header> 
+    <a className="link link-hover">关于我们</a>
+    <a className="link link-hover">联系我们</a>
+    <a className="link link-hover">招聘</a>
+    <a className="link link-hover">新闻资料</a>
   </nav> 
   <nav>
-    <header className="footer-title">Legal</header> 
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+    <header className="footer-title">法律</header> 
+    <a className="link link-hover">使用条款</a>
+    <a className="link link-hover">隐私政策</a>
+    <a className="link link-hover">Cookie 政策</a>
   </nav>
 </footer> 
 <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
   <aside className="items-center grid-flow-col">
    <img className=' w-4/12' src={logo}></img>
-    <p className='text-sm font-bold'>Four Pows <br/>Helping Friend of Pets</p>
+    <p className='text-sm font-bold'>FourPows <br/>帮助宠物朋友</p>
   </aside> 
   <nav className="md:place-self-center md:justify-self-end">
     <div className="grid grid-flow-col gap-4">

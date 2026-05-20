@@ -56,13 +56,13 @@ const Navbar = ({ children }) => {
     const navLinks=<>
     <li className=" "><NavLink to="/" className={({ isActive, isPending }) =>
                     isPending ? "pending " : isActive ? " text-[#fff] font-bold  rounded-3xl bg-[#D52B5C] px-6 py-2 underline-offset-8  hover:text-red " : ""
-                  }>Home</NavLink></li>
+                  }>首页</NavLink></li>
     <li><NavLink to="/petlisting" className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#fff] font-bold rounded-3xl bg-[#D52B5C] px-6 py-2   underline-offset-8 hover:text-red  " : ""
-                  }>宠物列表ing</NavLink></li>
+                  }>宠物列表</NavLink></li>
                   <li><NavLink to="/donationcampaign" className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#fff] font-bold rounded-3xl bg-[#D52B5C] px-6 py-2   underline-offset-8 hover:text-red  " : ""
-                  }>Donation Campaigns</NavLink></li>
+                  }>捐赠活动</NavLink></li>
                  
     
     </>
@@ -157,13 +157,13 @@ const Navbar = ({ children }) => {
       {/*  */}
       <hr className="font-bold mb-4"/>
       <div className="ml-4">
-      <Link to='/userdashboard'>Dashboard</Link>
+      <Link to='/userdashboard'>控制台</Link>
       </div>
       
         
     <div className="flex items-center ">
     <div>
-     <li><button onClick={handleSignOut} className="font-bold   mt-2   text-[#D52B5C]">Log Out</button></li>
+     <li><button onClick={handleSignOut} className="font-bold   mt-2   text-[#D52B5C]">登出</button></li>
      </div>
    <div>
    <CiLogin className="text-xl"></CiLogin>
@@ -176,8 +176,8 @@ const Navbar = ({ children }) => {
         <div className="hidden lg:flex  ">
         <CiLogin className="text-2xl"></CiLogin>
       {
-        user?<button onClick={handleSignOut} className="btn btn-sm md:btn-md border text-white bg-[#D52B5C] border-white-2 ">Log Out</button>
-        :   <Link to='/login'> <button className="py-2 text-white bg-[#D52B5C] px-6 border border-white-2 border-none lg:ml-5 rounded-sm">Login</button></Link>
+        user?<button onClick={handleSignOut} className="btn btn-sm md:btn-md border text-white bg-[#D52B5C] border-white-2 ">登出</button>
+        :   <Link to='/login'> <button className="py-2 text-white bg-[#D52B5C] px-6 border border-white-2 border-none lg:ml-5 rounded-sm">登录</button></Link>
       }
       </div>
               {/*  */}

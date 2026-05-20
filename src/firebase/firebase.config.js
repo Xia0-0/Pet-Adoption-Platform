@@ -5,14 +5,16 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD-c8Z6lkSQOEohRmngvJ1POK2q3sOcBI0",
-    authDomain: "pet-adoption-platform-cc33e.firebaseapp.com",
-    projectId: "pet-adoption-platform-cc33e",
-    storageBucket: "pet-adoption-platform-cc33e.appspot.com",
-    messagingSenderId: "295572274889",
-    appId: "1:295572274889:web:946f0389e3acdbb90d5718"
+    apiKey: "AIzaSyCzClY0AgQz5UtPx_uvJYcoq7uGeaoqUZY",
+    authDomain: "pet-adoption-platform-9f863.firebaseapp.com",
+    projectId: "pet-adoption-platform-9f863",
+    storageBucket: "pet-adoption-platform-9f863.firebasestorage.app",
+    messagingSenderId: "332270110383",
+    appId: "1:332270110383:web:3dc40b384b1e2bc59eb65a",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export default app;
+
+

@@ -19,7 +19,7 @@ const Home = () => {
           fetch(`https://serversite-pet-adoption.vercel.app/PetCategory`, )
             .then(response => response.json())
             .then(data => setPetsCategory(data))
-            .catch(error => console.error("Error fetching pets Category:", error));
+            .catch(error => console.error("获取宠物类别时出错：", error));
         
       }, []);
     return (

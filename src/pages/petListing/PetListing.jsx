@@ -111,11 +111,11 @@ const PetListing = () => {
             className='block ml-2 p-2 rounded border border-solid border-neutral-300 bg-white bg-clip-border text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary'
           >
             <option value="">全部分类</option>
-            <option value="Cat">Cat</option>
-            <option value="Dog">Dog</option>
-            <option value="Bird">Bird</option>
-            <option value="Lion">Lion</option>
-            <option value="Rabbit">Rabbit</option>
+            <option value="Cat">猫咪</option>
+            <option value="Dog">狗狗</option>
+            <option value="Bird">鸟类</option>
+            <option value="Lion">狮子</option>
+            <option value="Rabbit">兔子</option>
           </select>
           </div>
          </div>

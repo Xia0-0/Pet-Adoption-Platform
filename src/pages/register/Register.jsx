@@ -51,7 +51,7 @@ const Register = () => {
 
     if(!accepted){
       
-      toast.error('Please Accept Terms And Condition', {
+      toast.error('请接受条款和条件', {
         position: toast.POSITION.RIGHT_TOP,
         autoClose: 6000,
   hideProgressBar: false,
@@ -67,7 +67,7 @@ const Register = () => {
 
   if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/.test(password)){
     // alert("please write a valid password")
-    toast.warning('Please Entered a Valid Password', {
+    toast.warning('请输入符合规则的密码', {
       position: toast.POSITION.RIGHT_TOP,
       autoClose: 6000,
 hideProgressBar: false,
@@ -132,10 +132,10 @@ theme: "colored",
           <div className="mx-auto  " data-aos="fade-right">
             <div className="relative flex flex-wrap justify-center items-center flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
   <h4 className=" text-center text-5xl font-bold block font-sans text-black leading-snug tracking-normal text-blue-gray-900 antialiased">
-    Sign <span className="text-[#ff0000]">Up</span> 
+    注册
   </h4>
   <p className=" text-center mt-1 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-    Enter your details to register.
+    输入您的详细信息以完成注册。
   </p>
   <form onSubmit={handleRegister} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 py-6 rounded-md px-6 shadow-md">
     <div className="mb-4 flex flex-col gap-6">
@@ -145,7 +145,7 @@ theme: "colored",
           placeHolder=" " type="text" name="name" id="name" required
         />
         <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeHolder-shown:text-sm peer-placeHolder-shown:leading-[4.1] peer-placeHolder-shown:text-blue-gray-500 peer-placeHolder-shown:before:border-transparent peer-placeHolder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-purple-950  peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-purple-950  peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-purple-950  peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeHolder-shown:text-blue-gray-500">
-          Name
+          姓名
         </label>
       </div>
       <div className="relative h-11 w-full min-w-[200px]">
@@ -155,7 +155,7 @@ theme: "colored",
           placeHolder=" " type="text" name="photo" id="photo" required
         />
         <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeHolder-shown:text-sm peer-placeHolder-shown:leading-[4.1] peer-placeHolder-shown:text-blue-gray-500 peer-placeHolder-shown:before:border-transparent peer-placeHolder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-purple-950  peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-purple-950  peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-purple-950  peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeHolder-shown:text-blue-gray-500">
-          Photo URL
+          照片链接
         </label>
 
         {/* <input
@@ -175,7 +175,7 @@ theme: "colored",
           placeHolder="" type="email" name="email" id="email" required
         />
         <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-purple-950  peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-purple-950  peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-purple-950  peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-          Email
+          邮箱
         </label>
       </div>
       <div className="relative h-11 w-full min-w-[200px]">
@@ -185,7 +185,7 @@ theme: "colored",
           placeHolder=" "  name="password" id="password" required
         />
         <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-purple-950  peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-purple-950  peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-purple-950  peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-          Password
+          密码
         </label>
       </div>
     </div>
@@ -222,12 +222,12 @@ theme: "colored",
         htmlFor="checkbox" name='checkbox'
       >
         <p className="flex items-center font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
-          I agree the
+          我同意
           <a
             className="font-medium transition-colors hover:text-[#ff0000]"
             href="#"
           >
-            &nbsp; <span className="text-black font-bold">Terms and Conditions</span>
+            &nbsp; <span className="text-black font-bold">条款和条件</span>
           </a>
         </p>
       </label>
@@ -237,19 +237,21 @@ theme: "colored",
       type="submit" value='Register'
       data-ripple-light="true"
     >
-      Register
+      注册
     </button>
     <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-      Already have an account? 
+      已有账户？ 
       <Link to='/login'
         className="font-medium text-[#ff0000] transition-colors hover:text-blue-700"
         
       >
-        Sign In
+        登录
       </Link>
     </p>
   </form>
-  <p className='md:w-96 text-sm text-center'>By continuing, you agree to Boipoka's <span className='font-bold'>Terms of Service</span>; Opens a new tab and acknowledge you've read our Privacy Policy; Opens a new tab. </p>
+  <p style={{ fontSize: '14px', marginTop: '20px' }}>
+        继续即表示您同意 <a href="https://boipoka.com/terms" target="_blank" rel="noopener noreferrer">Boipoka 的服务条款</a>，并确认您已阅读我们的 <a href="https://boipoka.com/privacy" target="_blank" rel="noopener noreferrer">隐私政策</a>（将在新标签页中打开）。
+      </p>
   {/* {
     registerError && <p>{registerError}</p>
   }
