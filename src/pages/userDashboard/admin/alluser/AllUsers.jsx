@@ -10,7 +10,7 @@ const AllUsers = () => {
     const [users, setUsers] = useState([]);
     const axiosSecure =useAxiosSecure();
     useEffect(() => {
-      fetch(`https://serversite-pet-adoption.vercel.app/users`)
+      fetch( `${import.meta.env.VITE_API_BASE_URL}/users`)
         .then(response => response.json())
         .then(data => {
           console.log('Fetched users:', data);
@@ -20,7 +20,7 @@ const AllUsers = () => {
     }, []);
 
     const handleMakeAdmin=user=>{
-        axiosSecure.patch(`/users/admin/${user._id}`)
+        axiosSecure.patch(`${import.meta.env.VITE_API_BASE_URL}/users/admin/${user._id}`)
         .then(res=>{
             console.log(res.data);
             if(res.data.modifiedCount>0){

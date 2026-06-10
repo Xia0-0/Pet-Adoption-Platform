@@ -10,7 +10,7 @@ const AllDonationCampAdmin = () => {
    
     const axiosSecure = useAxiosSecure();
     useEffect(() => {
-        fetch(`https://serversite-pet-adoption.vercel.app/adddonationcamp`)
+        fetch( `${import.meta.env.VITE_API_BASE_URL}/adddonationcamp`)
           .then((response) => response.json())
           .then((data) => {
             console.log('Fetched users:', data);
@@ -32,7 +32,7 @@ const AllDonationCampAdmin = () => {
           confirmButtonText: 'Yes, Delete it!'
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`https://serversite-pet-adoption.vercel.app/adddonationcamp/${_id}`, {
+            fetch(`${import.meta.env.VITE_API_BASE_URL}/adddonationcamp/${_id}`, {
               method: 'DELETE',
             })
               .then(response => response.json())
@@ -58,7 +58,7 @@ const AllDonationCampAdmin = () => {
         updatePetStatusLocally(petId, true);
     
         axiosSecure
-          .patch(`/admin/pause/${petId}`)
+          .patch(`${import.meta.env.VITE_API_BASE_URL}/admin/pause/${petId}`)
           .then((res) => {
             console.log(res.data);
             if (res.data.modifiedCount === 0) {
@@ -89,7 +89,7 @@ const AllDonationCampAdmin = () => {
         updatePetStatusLocally(petId, false);
     
         axiosSecure
-          .patch(`/admin/resume/${petId}`)
+          .patch(`${import.meta.env.VITE_API_BASE_URL}/admin/resume/${petId}`)
           .then((res) => {
             console.log(res.data);
             if (res.data.modifiedCount === 0) {

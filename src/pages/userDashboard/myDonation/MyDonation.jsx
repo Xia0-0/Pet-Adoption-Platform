@@ -20,7 +20,7 @@ const {user}=useContext(AuthContext);
     const pagesVisited = currentPage * petsPerPage;
   
     // useEffect(() => {
-    //   fetch(`https://serversite-pet-adoption.vercel.app/pets`)
+    //   fetch( `${import.meta.env.VITE_API_BASE_URL}/pets`)
     //     .then(response => response.json())
     //     .then(data => {
     //       console.log('Fetched pets:', data);
@@ -32,7 +32,7 @@ const {user}=useContext(AuthContext);
    
 
     useEffect(() => {
-      fetch(`https://serversite-pet-adoption.vercel.app/payments`)
+      fetch( `${import.meta.env.VITE_API_BASE_URL}/payments`)
         .then(response => response.json())
         .then(data => {
           console.log('Fetched payments:', data);
@@ -60,7 +60,7 @@ const {user}=useContext(AuthContext);
           confirmButtonText: 'Yes, Remove it!'
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`https://serversite-pet-adoption.vercel.app/payments/${_id}`, {
+            fetch( `${import.meta.env.VITE_API_BASE_URL}/payments/${_id}`, {
               method: 'DELETE',
             })
               .then(response => response.json())

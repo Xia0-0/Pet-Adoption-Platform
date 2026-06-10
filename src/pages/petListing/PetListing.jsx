@@ -43,7 +43,7 @@ const PetListing = () => {
     // Include category parameter only if selectedCategory is not empty
     const categoryParam = selectedCategory ? `&category=${selectedCategory}` : '';
   
-    fetch(`https://serversite-pet-adoption.vercel.app/pets?limit=${fetchLimit}${categoryParam}`)
+    fetch( `${import.meta.env.VITE_API_BASE_URL}/pets?limit=${fetchLimit}${categoryParam}`)
       .then(response => response.json())
       .then(data => {
         // Sort the data by addedDate in descending order

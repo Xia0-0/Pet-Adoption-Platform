@@ -11,7 +11,7 @@ const AllPetsAdmin = () => {
     const axiosSecure = useAxiosSecure();
   
     useEffect(() => {
-      fetch(`https://serversite-pet-adoption.vercel.app/pets`)
+      fetch( `${import.meta.env.VITE_API_BASE_URL}/pets`)
         .then((response) => response.json())
         .then((data) => {
           console.log('Fetched users:', data);
@@ -37,7 +37,7 @@ const AllPetsAdmin = () => {
       updatePetStatusLocally(petId, true);
   
       axiosSecure
-        .patch(`/admin/adopted/${petId}`)
+        .patch(`${import.meta.env.VITE_API_BASE_URL}/admin/adopted/${petId}`)
         .then((res) => {
           console.log(res.data);
           if (res.data.modifiedCount === 0) {
@@ -68,7 +68,7 @@ const AllPetsAdmin = () => {
       updatePetStatusLocally(petId, false);
   
       axiosSecure
-        .patch(`/admin/notadopted/${petId}`)
+        .patch(`${import.meta.env.VITE_API_BASE_URL}/admin/notadopted/${petId}`)
         .then((res) => {
           console.log(res.data);
           if (res.data.modifiedCount === 0) {
@@ -102,7 +102,7 @@ const AllPetsAdmin = () => {
           confirmButtonText: 'Yes, Delete it!'
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`https://serversite-pet-adoption.vercel.app/pets/${_id}`, {
+            fetch(`${import.meta.env.VITE_API_BASE_URL}/pets/${_id}`, {
               method: 'DELETE',
             })
               .then(response => response.json())

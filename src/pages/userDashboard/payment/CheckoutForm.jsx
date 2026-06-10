@@ -19,7 +19,7 @@ const CheckoutForm = () => {
   const [loading, setLoading] = useState(true); // Add loading state
   const { id } = useParams();
   useEffect(() => {
-    fetch(`https://serversite-pet-adoption.vercel.app/adddonationcamp`)
+    fetch( `${import.meta.env.VITE_API_BASE_URL}/adddonationcamp`)
       .then(response => response.json())
       .then(data => {
         const activeDonation = data.find(donation => donation._id == id);

@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        // loader: () => fetch('https://serversite-pet-adoption.vercel.app/PetCategory')
+        // loader: () =>fetch(`${import.meta.env.VITE_API_BASE_URL}/PetCategory`)
       },
       {
         path: '/petlisting',
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
       {
         path: '/catagorized_pets/:cat',
         element: <AllPetsByCategory></AllPetsByCategory>,
-        loader: ({ params }) => fetch(`https://serversite-pet-adoption.vercel.app/petbycategory/${params.cat}`)
+        loader: ({ params }) => fetch(`${import.meta.env.VITE_API_BASE_URL}/petbycategory/${params.cat}`)
       },
       {
         path: '/adoptionreq',
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
       {
         path: '/donationcampaigndetails/:id',
         element: <PrivateRoute><DonationCampaignDetails></DonationCampaignDetails></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://serversite-pet-adoption.vercel.app/adddonationcamp/${params.id}`)
+        loader: ({ params }) => fetch(`${import.meta.env.VITE_API_BASE_URL}/adddonationcamp/${params.id}`)
       },
       {
         path: "/login",
@@ -100,7 +100,7 @@ const router = createBrowserRouter([
       {
         path: '/adoptpet/:id',
         element: <PrivateRoute><AdoptPet></AdoptPet></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://serversite-pet-adoption.vercel.app/pets/${params.id}`)
+        loader: ({ params }) => fetch(`${import.meta.env.VITE_API_BASE_URL}/pets/${params.id}`)
       },
       {
         path: '/myaddedpets',
@@ -117,14 +117,14 @@ const router = createBrowserRouter([
       {
         path: '/updatedonationcamp/:donationCampaignId',
         element: <PrivateRoute><UpdateDonationCampDashboard></UpdateDonationCampDashboard></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://serversite-pet-adoption.vercel.app/adddonationcamp/${params.donationCampaignId}`)
+        loader: ({ params }) => fetch(`${import.meta.env.VITE_API_BASE_URL}/adddonationcamp/${params.donationCampaignId}`)
       },
 
 
       {
         path: '/updatepet/:petId',
         element: <PrivateRoute><UpdatePetDashboard></UpdatePetDashboard></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://serversite-pet-adoption.vercel.app/pets/${params.petId}`)
+        loader: ({ params }) => fetch(`${import.meta.env.VITE_API_BASE_URL}/pets/${params.petId}`)
 
       },
       {

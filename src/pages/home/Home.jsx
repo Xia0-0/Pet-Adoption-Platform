@@ -16,7 +16,7 @@ const Home = () => {
     const [petsCategory, setPetsCategory] = useState([]);
     useEffect(() => {
          
-          fetch(`https://serversite-pet-adoption.vercel.app/PetCategory`, )
+          fetch(`${import.meta.env.VITE_API_BASE_URL}/PetCategory`, )
             .then(response => response.json())
             .then(data => setPetsCategory(data))
             .catch(error => console.error("获取宠物类别时出错：", error));

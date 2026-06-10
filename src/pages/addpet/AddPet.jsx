@@ -126,7 +126,7 @@ console.log('img',url);
         };
         console.log('userEmailAddPet',user.email);
   
-        const response = await fetch("https://serversite-pet-adoption.vercel.app/pets", {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/pets`, {
           method: "POST",
           headers: {
             "content-type": "application/json",

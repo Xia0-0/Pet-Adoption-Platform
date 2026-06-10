@@ -60,7 +60,7 @@ const AdoptPet = () => {
     // 提交前关闭弹窗
     document.getElementById('my_modal_4').close();
 
-    fetch('https://serversite-pet-adoption.vercel.app/addtoadopt', {
+    fetch( `${import.meta.env.VITE_API_BASE_URL}/addtoadopt`, {
 
       method: 'POST',
 

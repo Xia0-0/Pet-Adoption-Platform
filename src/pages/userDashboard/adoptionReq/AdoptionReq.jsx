@@ -13,7 +13,7 @@ const AdoptionReq = () => {
   const axiosSecure = useAxiosSecure();
 
   useEffect(() => {
-    fetch(`https://serversite-pet-adoption.vercel.app/addtoadopt`)
+    fetch( `${import.meta.env.VITE_API_BASE_URL}/addtoadopt`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched pets:', data);
@@ -44,7 +44,7 @@ console.log('request pet',pets);
     updatePetStatusLocally(petId, true);
 
     axiosSecure
-      .patch(`/admin/accept/${petId}`,{petId:pet.petId,id:pet._id})
+      .patch(`${import.meta.env.VITE_API_BASE_URL}/admin/accept/${petId}`,{petId:pet.petId,id:pet._id})
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount === 0) {
@@ -75,7 +75,7 @@ console.log('request pet',pets);
     updatePetStatusLocally(petId, false);
 
     axiosSecure
-      .patch(`/admin/reject/${petId}`,{petId:pet.petId,id:pet._id})
+      .patch(`${import.meta.env.VITE_API_BASE_URL}/admin/reject/${petId}`,{petId:pet.petId,id:pet._id})
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount === 0) {

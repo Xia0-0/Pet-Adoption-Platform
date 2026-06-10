@@ -15,7 +15,7 @@ const AdoptionReqDashboard = () => {
   const[isAdmin,setIsAdmin]=useState(false)
 
   useEffect(() => {
-    fetch(`https://serversite-pet-adoption.vercel.app/users`)
+    fetch( `${import.meta.env.VITE_API_BASE_URL}/users`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched users:', data);

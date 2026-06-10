@@ -12,7 +12,9 @@ const AllPetsByCategory = () => {
     // const [pets, setPets] = useState([]);
     // useEffect(() => {
          
-    //       fetch(`https://serversite-pet-adoption.vercel.app/pets?category=${category}`, )
+    //       fetch(`${import.meta.env.VITE_API_BASE_URL}`/
+    // 
+    // pets?category=${category}`, )
     //         .then(response => response.json())
     //         .then(data => setPets(data))
     //         .catch(error => console.error("Error fetching pets Category:", error));
