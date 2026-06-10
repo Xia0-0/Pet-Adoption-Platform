@@ -28,7 +28,7 @@ React (Vite 前端)
    ↓ axios / fetch
 Express (Node.js 后端 API)
    ↓
-MongoDB Atlas / Firebase
+MongoDB  / Firebase
 ```
 
 ---
@@ -47,7 +47,7 @@ MongoDB Atlas / Firebase
 
 * Node.js
 * Express
-* MongoDB Atlas
+* MongoDB
 
 ### 认证系统
 
